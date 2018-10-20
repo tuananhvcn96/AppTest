@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="AppTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-aI-VkG">
+                        <rect key="frame" x="0.0" y="27" width="375" height="103.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JohnDoe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTa-dA-52r">
+                                <rect key="frame" x="97.5" y="25" width="100" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="BOk-li-4C5"/>
+                                    <constraint firstAttribute="height" constant="16" id="Bf4-w5-j0w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Listings | 26 Meetups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2H-sl-lVh">
+                                <rect key="frame" x="97.5" y="49" width="201" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="9Yu-OX-FdV"/>
+                                    <constraint firstAttribute="width" constant="201" id="amp-vw-Ufe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESd-z1-G7L">
+                                <rect key="frame" x="337" y="41" width="11" height="20.5"/>
+                                <state key="normal" backgroundImage="next"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="productImage" translatesAutoresizingMaskIntoConstraints="NO" id="MMh-dK-WGg">
+                                <rect key="frame" x="20" y="25" width="50" height="53.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="yUo-cd-dHi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C2H-sl-lVh" firstAttribute="top" secondItem="xTa-dA-52r" secondAttribute="bottom" constant="8" id="4DT-gg-mvM"/>
+                            <constraint firstItem="xTa-dA-52r" firstAttribute="top" secondItem="7Hi-aI-VkG" secondAttribute="top" constant="25" id="5fi-XB-08z"/>
+                            <constraint firstItem="xTa-dA-52r" firstAttribute="leading" secondItem="MMh-dK-WGg" secondAttribute="trailing" constant="27.600000000000001" id="FTF-Pi-xah"/>
+                            <constraint firstAttribute="bottom" secondItem="ESd-z1-G7L" secondAttribute="bottom" constant="42" id="IK1-9e-mgd"/>
+                            <constraint firstItem="MMh-dK-WGg" firstAttribute="leading" secondItem="7Hi-aI-VkG" secondAttribute="leading" constant="20" id="WyV-OW-ylS"/>
+                            <constraint firstItem="MMh-dK-WGg" firstAttribute="top" secondItem="7Hi-aI-VkG" secondAttribute="top" constant="25" id="aYB-BW-pJn"/>
+                            <constraint firstItem="ESd-z1-G7L" firstAttribute="top" secondItem="7Hi-aI-VkG" secondAttribute="top" constant="41" id="iol-Oh-5yD"/>
+                            <constraint firstAttribute="trailing" secondItem="ESd-z1-G7L" secondAttribute="trailing" constant="27" id="s7p-bu-NLJ"/>
+                            <constraint firstAttribute="bottom" secondItem="MMh-dK-WGg" secondAttribute="bottom" constant="25" id="thc-Xa-WGu"/>
+                            <constraint firstItem="C2H-sl-lVh" firstAttribute="leading" secondItem="MMh-dK-WGg" secondAttribute="trailing" constant="27.5" id="upS-K2-qXw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="7Hi-aI-VkG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="E9Z-fE-4VW"/>
+                    <constraint firstItem="7Hi-aI-VkG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="27" id="ZoR-AW-us6"/>
+                    <constraint firstAttribute="bottom" secondItem="7Hi-aI-VkG" secondAttribute="bottom" id="fNb-gd-3lG"/>
+                    <constraint firstAttribute="trailing" secondItem="7Hi-aI-VkG" secondAttribute="trailing" id="kUs-gS-EeN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageViewUser" destination="MMh-dK-WGg" id="ovl-GW-HVO"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="next" width="11" height="21"/>
+        <image name="productImage" width="233" height="233"/>
+    </resources>
+</document>
