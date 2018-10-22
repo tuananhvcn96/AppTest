@@ -85,7 +85,7 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         if indexPath.section == 4 {
-            return 312
+            return 257
         }
         
         return UITableViewAutomaticDimension

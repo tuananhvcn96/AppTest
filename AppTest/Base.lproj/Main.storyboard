@@ -511,8 +511,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cTi-cR-cxZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="548"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="548" id="nO1-Lt-cF2"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TakeHomeTableViewCell" id="8Tz-am-83J" customClass="TakeHomeTableViewCell" customModule="AppTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -560,13 +563,41 @@
                                     <outlet property="delegate" destination="W2c-6K-sVN" id="aLy-8m-9K3"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQC-bX-bRV">
+                                <rect key="frame" x="0.0" y="548" width="375" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixv-mQ-AVv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                        <color key="backgroundColor" red="0.78431372549019607" green="0.68627450980392157" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="POE-ai-SH3"/>
+                                            <constraint firstAttribute="height" constant="55" id="jWn-3j-I9q"/>
+                                        </constraints>
+                                        <state key="normal" title="Contact Johndoe">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ixv-mQ-AVv" secondAttribute="bottom" id="eUb-Uo-8CL"/>
+                                    <constraint firstAttribute="width" constant="375" id="k2u-Jd-KwQ"/>
+                                    <constraint firstAttribute="height" constant="55" id="ncs-ED-uhV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ixv-mQ-AVv" secondAttribute="trailing" id="s0N-PO-p5e"/>
+                                    <constraint firstItem="Ixv-mQ-AVv" firstAttribute="leading" secondItem="ZQC-bX-bRV" secondAttribute="leading" id="sMY-TT-7fJ"/>
+                                    <constraint firstItem="Ixv-mQ-AVv" firstAttribute="top" secondItem="ZQC-bX-bRV" secondAttribute="top" id="vvV-Jj-u9x"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cTi-cR-cxZ" firstAttribute="leading" secondItem="hhQ-ev-Sui" secondAttribute="leading" id="G21-2r-FvG"/>
-                            <constraint firstItem="hhQ-ev-Sui" firstAttribute="bottom" secondItem="cTi-cR-cxZ" secondAttribute="bottom" id="OcF-NQ-wst"/>
-                            <constraint firstItem="cTi-cR-cxZ" firstAttribute="top" secondItem="hhQ-ev-Sui" secondAttribute="top" id="bQM-Wh-6yg"/>
-                            <constraint firstItem="hhQ-ev-Sui" firstAttribute="trailing" secondItem="cTi-cR-cxZ" secondAttribute="trailing" id="v6b-JP-Za4"/>
+                            <constraint firstItem="cTi-cR-cxZ" firstAttribute="leading" secondItem="hhQ-ev-Sui" secondAttribute="leading" id="12v-vL-wGq"/>
+                            <constraint firstItem="cTi-cR-cxZ" firstAttribute="trailing" secondItem="hhQ-ev-Sui" secondAttribute="trailing" id="40H-Yh-xVI"/>
+                            <constraint firstItem="ZQC-bX-bRV" firstAttribute="bottom" secondItem="hhQ-ev-Sui" secondAttribute="bottom" id="NOe-Fn-dWA"/>
+                            <constraint firstItem="ZQC-bX-bRV" firstAttribute="trailing" secondItem="hhQ-ev-Sui" secondAttribute="trailing" id="YEo-Z0-YeT"/>
+                            <constraint firstItem="ZQC-bX-bRV" firstAttribute="top" secondItem="cTi-cR-cxZ" secondAttribute="bottom" id="YsR-Ez-dmp"/>
+                            <constraint firstItem="cTi-cR-cxZ" firstAttribute="top" secondItem="hhQ-ev-Sui" secondAttribute="top" id="goh-Sz-Fqw"/>
+                            <constraint firstItem="ZQC-bX-bRV" firstAttribute="leading" secondItem="hhQ-ev-Sui" secondAttribute="leading" id="rO9-Tr-YQJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hhQ-ev-Sui"/>
                     </view>
@@ -577,7 +608,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIQ-Ni-SDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1660" y="119"/>
+            <point key="canvasLocation" x="1660" y="118.29085457271366"/>
         </scene>
         <!--User View Controller-->
         <scene sceneID="OF8-wx-01F">

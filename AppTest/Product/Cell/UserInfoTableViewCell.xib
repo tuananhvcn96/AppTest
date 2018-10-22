@@ -65,15 +65,19 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrC-yt-K3b">
-                                        <rect key="frame" x="317" y="10" width="18" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.39484117795586327" green="0.56890466370000004" blue="0.54621911013017654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" backgroundImage="checkmark3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrC-yt-K3b">
+                                        <rect key="frame" x="311.5" y="10" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="8ua-9i-lb5"/>
+                                            <constraint firstAttribute="height" constant="18" id="wVq-MZ-wnw"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="blue-check-icon"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KrC-yt-K3b" secondAttribute="trailing" constant="13.5" id="B3K-hV-Z9A"/>
+                                    <constraint firstItem="KrC-yt-K3b" firstAttribute="top" secondItem="UW7-Vy-GUH" secondAttribute="top" constant="10" id="QZj-tL-zCz"/>
                                     <constraint firstAttribute="height" constant="37" id="Wss-sX-ooq"/>
                                 </constraints>
                             </view>
@@ -94,16 +98,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VC-iX-pjX">
-                                        <rect key="frame" x="317" y="10" width="18" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.39484117800000001" green="0.56890466370000004" blue="0.54621911010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" backgroundImage="checkmark3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VC-iX-pjX">
+                                        <rect key="frame" x="311" y="10" width="18" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="hUl-1P-Kst"/>
+                                            <constraint firstAttribute="width" constant="18" id="mqJ-9P-LHs"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="blue-check-icon"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5VC-iX-pjX" secondAttribute="trailing" constant="13.5" id="4Sx-AO-IoS"/>
                                     <constraint firstAttribute="height" constant="37" id="QXR-e5-wSt"/>
+                                    <constraint firstItem="5VC-iX-pjX" firstAttribute="top" secondItem="J0i-Oo-wjf" secondAttribute="top" constant="10" id="ayu-tW-hVL"/>
                                 </constraints>
                             </view>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAu-FG-6bh">
@@ -123,16 +132,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve7-tD-AOC">
-                                        <rect key="frame" x="317" y="9" width="18" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.39484117800000001" green="0.56890466370000004" blue="0.54621911010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" backgroundImage="checkmark3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve7-tD-AOC">
+                                        <rect key="frame" x="311.5" y="9" width="18" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="EUC-Vg-jVI"/>
+                                            <constraint firstAttribute="width" constant="18" id="gd2-xY-lmA"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="blue-check-icon"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="Ve7-tD-AOC" firstAttribute="top" secondItem="TZy-IT-A37" secondAttribute="top" constant="9" id="QGM-ou-4NC"/>
                                     <constraint firstAttribute="height" constant="37" id="RI7-JF-NpL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ve7-tD-AOC" secondAttribute="trailing" constant="13.5" id="xca-oH-qHV"/>
                                 </constraints>
                             </view>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9p1-fX-bRC">
@@ -152,16 +166,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a4-vS-iV8">
-                                        <rect key="frame" x="317" y="9" width="18" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.39484117800000001" green="0.56890466370000004" blue="0.54621911010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" backgroundImage="checkmark3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a4-vS-iV8">
+                                        <rect key="frame" x="311.5" y="9" width="18" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="mIy-yL-jce"/>
+                                            <constraint firstAttribute="height" constant="18" id="u0m-3n-sVP"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="blue-check-icon"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2a4-vS-iV8" secondAttribute="trailing" constant="13.5" id="K3G-3N-Dlv"/>
                                     <constraint firstAttribute="height" constant="37" id="PCG-6N-Pgg"/>
+                                    <constraint firstItem="2a4-vS-iV8" firstAttribute="top" secondItem="Rm5-We-SIr" secondAttribute="top" constant="9" id="qj4-1l-z8q"/>
                                 </constraints>
                             </view>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11P-qL-eKv">
@@ -232,6 +251,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="checkmark3" width="20" height="20"/>
+        <image name="blue-check-icon" width="35" height="35"/>
     </resources>
 </document>
