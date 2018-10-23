@@ -73,11 +73,13 @@ extension UserInfoViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: UserTwoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "UserTwoTableViewCell", for: indexPath) as? UserTwoTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         } else if indexPath.section == 1 {
             guard let cell: ListingTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ListingTableViewCell", for: indexPath) as? ListingTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
             
@@ -85,6 +87,7 @@ extension UserInfoViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: ReviewsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ReviewsTableViewCell", for: indexPath) as? ReviewsTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
             
@@ -92,6 +95,7 @@ extension UserInfoViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: UserInfoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "UserInfoTableViewCell", for: indexPath) as? UserInfoTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
         return UITableViewCell()

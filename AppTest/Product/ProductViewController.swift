@@ -97,11 +97,13 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: TakeHomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TakeHomeTableViewCell", for: indexPath) as? TakeHomeTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         } else if indexPath.section == 1 {
             guard let cell: ReviewsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ReviewsTableViewCell", for: indexPath) as? ReviewsTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
         
@@ -109,6 +111,7 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: UserTableViewCell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as? UserTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
         
@@ -116,6 +119,7 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: UserInfoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "UserInfoTableViewCell", for: indexPath) as? UserInfoTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
         
@@ -123,6 +127,7 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: MapTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MapTableViewCell", for: indexPath) as? MapTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
         return UITableViewCell()

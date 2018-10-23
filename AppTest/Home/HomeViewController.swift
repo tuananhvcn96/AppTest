@@ -40,6 +40,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell else {
             return UITableViewCell()
         }
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
     }
     

@@ -66,11 +66,13 @@ extension FlowwViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: MapTwoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MapTwoTableViewCell", for: indexPath) as? MapTwoTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         } else if indexPath.section == 1 {
             guard let cell: ReviewsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ReviewsTableViewCell", for: indexPath) as? ReviewsTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
             
@@ -78,6 +80,7 @@ extension FlowwViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: UserInfoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "UserInfoTableViewCell", for: indexPath) as? UserInfoTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
         return UITableViewCell()

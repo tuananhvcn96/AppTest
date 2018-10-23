@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJy-Pn-8Tv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJy-Pn-8Tv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -637,6 +645,9 @@
                                                     <constraint firstAttribute="height" constant="136" id="86d-E8-BPi"/>
                                                     <constraint firstAttribute="width" constant="240" id="UuY-TM-Hkr"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="delegate" destination="NWG-0d-Q0N" id="0CG-x6-hbr"/>
+                                                </connections>
                                             </mapView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eq1-Qx-h5B">
                                                 <rect key="frame" x="0.0" y="155" width="375" height="107"/>
@@ -928,6 +939,7 @@
                         <outlet property="image3" destination="XpE-kB-o6Z" id="Ceh-8N-BZu"/>
                         <outlet property="image4" destination="Vc7-xp-Md2" id="bL0-26-eTg"/>
                         <outlet property="imageViewIM" destination="luc-tm-LDq" id="EBx-IF-X0L"/>
+                        <outlet property="mapView" destination="vHg-EW-UEy" id="CIi-yN-cRH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOZ-06-DDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1079,6 +1091,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyM-fV-iP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6520.8000000000002" y="115.59220389805098"/>
+        </scene>
+        <!--Popup-->
+        <scene sceneID="8z3-NP-8FR">
+            <objects>
+                <viewController storyboardIdentifier="Popup" id="PNd-A9-7pn" customClass="Popup" customModule="SelfOrderTablet" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QZR-rO-VLX">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="57"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-AI-nrI">
+                                <rect key="frame" x="15" y="10" width="157" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.85882352939999995" green="0.027450980390000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPU-jt-cZv">
+                                <rect key="frame" x="15" y="33" width="157" height="14"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8dR-AI-nrI" firstAttribute="leading" secondItem="ie8-Y7-oYp" secondAttribute="leading" constant="15" id="AbM-QH-YhU"/>
+                            <constraint firstItem="ie8-Y7-oYp" firstAttribute="trailing" secondItem="SPU-jt-cZv" secondAttribute="trailing" constant="15" id="Gwz-Yn-ntP"/>
+                            <constraint firstItem="SPU-jt-cZv" firstAttribute="leading" secondItem="ie8-Y7-oYp" secondAttribute="leading" constant="15" id="Vgl-YF-26q"/>
+                            <constraint firstItem="8dR-AI-nrI" firstAttribute="top" secondItem="QZR-rO-VLX" secondAttribute="top" constant="10" id="iBi-nV-XOy"/>
+                            <constraint firstItem="ie8-Y7-oYp" firstAttribute="bottom" secondItem="SPU-jt-cZv" secondAttribute="bottom" constant="10" id="wEo-4Q-ebC"/>
+                            <constraint firstItem="ie8-Y7-oYp" firstAttribute="trailing" secondItem="8dR-AI-nrI" secondAttribute="trailing" constant="15" id="zHn-8Z-9vE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ie8-Y7-oYp"/>
+                    </view>
+                    <size key="freeformSize" width="187" height="57"/>
+                    <connections>
+                        <outlet property="desricriLabel" destination="SPU-jt-cZv" id="vEd-Yu-GON"/>
+                        <outlet property="nameLabel" destination="8dR-AI-nrI" id="tjn-QT-UDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9t-t5-0En" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="-296"/>
         </scene>
     </scenes>
     <resources>
