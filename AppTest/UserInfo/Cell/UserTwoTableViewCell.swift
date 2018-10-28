@@ -32,6 +32,17 @@ class UserTwoTableViewCell: UITableViewCell {
         mapView.addAnnotations(venues)
         checkLocationServiceAuthenticationStatus()
         
+        self.imageViewUserTwo.layer.cornerRadius = imageViewUserTwo.frame.height / 2
+        self.imageViewUserTwo.layer.masksToBounds = true
+        
+    }
+    
+    @objc func imageTapped(gesture: UIGestureRecognizer) {
+        
+        // if the tapped view is a UIImageView then set it to imageview
+        if (gesture.view as? UIImageView) != nil {
+            print("ok")
+        }
     }
     
     func fetchData(){

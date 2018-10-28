@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.30.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRp-SK-LeK">
-                                        <rect key="frame" x="152" y="54" width="70" height="14"/>
+                                        <rect key="frame" x="152.5" y="54" width="70" height="14"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarActive" translatesAutoresizingMaskIntoConstraints="NO" id="TIO-wM-rEA">
                                                 <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
@@ -100,7 +100,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="William Kelly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9K-Jr-l6a">
                                         <rect key="frame" x="137" y="71" width="100" height="16"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="16" id="fFO-IV-gmR"/>
+                                            <constraint firstAttribute="height" constant="16" id="8Gc-xL-vg2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                         <nil key="textColor"/>
@@ -116,19 +116,18 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="bJq-nO-pLb" firstAttribute="leading" secondItem="bZB-7C-4TN" secondAttribute="leading" constant="151" id="1tN-oQ-z3n"/>
-                                    <constraint firstItem="Y9K-Jr-l6a" firstAttribute="top" secondItem="wLd-Oo-h3E" secondAttribute="bottom" constant="10" id="4WH-X1-itp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y9K-Jr-l6a" secondAttribute="trailing" constant="138" id="3Rb-Uy-4PU"/>
+                                    <constraint firstItem="Y9K-Jr-l6a" firstAttribute="leading" secondItem="bZB-7C-4TN" secondAttribute="leading" constant="137" id="5OZ-cR-ZWR"/>
                                     <constraint firstAttribute="height" constant="105" id="7Iq-Uz-K6z"/>
-                                    <constraint firstItem="Y9K-Jr-l6a" firstAttribute="centerX" secondItem="bZB-7C-4TN" secondAttribute="centerX" id="8px-nd-PXj"/>
                                     <constraint firstItem="wLd-Oo-h3E" firstAttribute="centerX" secondItem="bZB-7C-4TN" secondAttribute="centerX" id="Kt2-Ql-DdK"/>
-                                    <constraint firstAttribute="trailing" secondItem="Y9K-Jr-l6a" secondAttribute="trailing" constant="138" id="Poa-Yt-PRf"/>
                                     <constraint firstAttribute="trailing" secondItem="bJq-nO-pLb" secondAttribute="trailing" constant="152" id="TEd-cK-G6e"/>
+                                    <constraint firstItem="Y9K-Jr-l6a" firstAttribute="top" secondItem="wLd-Oo-h3E" secondAttribute="bottom" constant="10" id="cWG-Bt-nQb"/>
                                     <constraint firstItem="wLd-Oo-h3E" firstAttribute="top" secondItem="bZB-7C-4TN" secondAttribute="top" constant="16" id="dCc-zg-G82"/>
-                                    <constraint firstItem="bJq-nO-pLb" firstAttribute="top" secondItem="Y9K-Jr-l6a" secondAttribute="bottom" constant="2" id="gjB-jX-mIR"/>
-                                    <constraint firstItem="Y9K-Jr-l6a" firstAttribute="leading" secondItem="bZB-7C-4TN" secondAttribute="leading" constant="137" id="vZr-by-Bbb"/>
+                                    <constraint firstItem="bJq-nO-pLb" firstAttribute="top" secondItem="Y9K-Jr-l6a" secondAttribute="bottom" constant="2" id="q75-p3-qY1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2X4-i8-efw">
-                                <rect key="frame" x="0.0" y="182" width="375" height="97"/>
+                                <rect key="frame" x="0.0" y="182" width="375" height="96.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Many people were hoping that if the Democrats won control of Congress they would reverse the online…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpm-xu-mDi">
                                         <rect key="frame" x="8" y="8" width="359" height="49"/>
@@ -140,9 +139,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jz1-tR-cLf">
-                                        <rect key="frame" x="156" y="64" width="62" height="17"/>
+                                        <rect key="frame" x="156.5" y="64" width="62" height="17"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="17" id="aRw-G3-C2k"/>
+                                            <constraint firstAttribute="height" constant="17" id="Ksi-IY-vJn"/>
+                                            <constraint firstAttribute="width" constant="62" id="p5H-4e-YEB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                         <state key="normal" title="View All">
@@ -154,11 +154,9 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Jpm-xu-mDi" secondAttribute="trailing" constant="8" id="3EF-GI-4eg"/>
                                     <constraint firstItem="Jpm-xu-mDi" firstAttribute="top" secondItem="2X4-i8-efw" secondAttribute="top" constant="8" id="3EP-s5-aWt"/>
-                                    <constraint firstItem="Jz1-tR-cLf" firstAttribute="leading" secondItem="2X4-i8-efw" secondAttribute="leading" constant="156" id="OzK-jP-XSH"/>
-                                    <constraint firstAttribute="trailing" secondItem="Jz1-tR-cLf" secondAttribute="trailing" constant="157" id="giT-90-gX0"/>
-                                    <constraint firstItem="Jz1-tR-cLf" firstAttribute="centerX" secondItem="2X4-i8-efw" secondAttribute="centerX" id="mcI-rY-HbU"/>
+                                    <constraint firstItem="Jz1-tR-cLf" firstAttribute="centerX" secondItem="2X4-i8-efw" secondAttribute="centerX" id="Ddv-Ge-Vd6"/>
+                                    <constraint firstItem="Jz1-tR-cLf" firstAttribute="top" secondItem="Jpm-xu-mDi" secondAttribute="bottom" constant="7" id="Fxf-p0-4s9"/>
                                     <constraint firstItem="Jpm-xu-mDi" firstAttribute="leading" secondItem="2X4-i8-efw" secondAttribute="leading" constant="8" id="r6Z-mN-U3g"/>
-                                    <constraint firstItem="Jz1-tR-cLf" firstAttribute="top" secondItem="Jpm-xu-mDi" secondAttribute="bottom" constant="7" id="yG8-kX-gg0"/>
                                 </constraints>
                             </view>
                         </subviews>

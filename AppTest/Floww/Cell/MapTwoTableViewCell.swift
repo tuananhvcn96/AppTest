@@ -12,6 +12,7 @@ import SwiftyJSON
 
 class MapTwoTableViewCell: UITableViewCell,UIPopoverPresentationControllerDelegate {
 
+    @IBOutlet weak var imageViewFL: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
     var venues = [Venue]()
     var anotionTitle: String? = ""
@@ -30,6 +31,8 @@ class MapTwoTableViewCell: UITableViewCell,UIPopoverPresentationControllerDelega
         fetchData()
         mapView.addAnnotations(venues)
         checkLocationServiceAuthenticationStatus()
+        self.imageViewFL.layer.cornerRadius = imageViewFL.frame.height / 2
+        self.imageViewFL.layer.masksToBounds = true
         
     }
     

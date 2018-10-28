@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Presentr
 
 enum CustomElementType: String {
     case reviews
@@ -34,6 +35,28 @@ class ProductViewController: UIViewController {
         tableView.showsHorizontalScrollIndicator = false
         self.setupCell()
     }
+    @IBAction func tapCallAlert(_ sender: Any) {
+        let alert = UIAlertController(title: "Subscribe", message: "Coming Soon", preferredStyle: .alert)
+        let subButton = UIAlertAction(title: "Subcribe", style: .default, handler: self.sub)
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(subButton)
+        alert.addAction(cancelButton)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func sub(alert: UIAlertAction) {
+        print("Coming soon")
+    }
+    
+    @objc func imageTapped(gesture: UIGestureRecognizer) {
+        
+        // if the tapped view is a UIImageView then set it to imageview
+        if (gesture.view as? UIImageView) != nil {
+            guard let userVC = self.storyboard?.instantiateViewController(withIdentifier: UserViewController.iddentifer) as? UserViewController else { return }
+            self.navigationController?.pushViewController(userVC, animated: true)
+        }
+    }
     
     func setupCell() {
         let nib = UINib(nibName: "TakeHomeTableViewCell", bundle: nil)
@@ -51,7 +74,6 @@ class ProductViewController: UIViewController {
         let nibMap = UINib(nibName: "MapTableViewCell", bundle: nil)
         self.tableView.register(nibMap, forCellReuseIdentifier: "MapTableViewCell")
     }
-    
 }
 
 
@@ -103,6 +125,14 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: ReviewsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ReviewsTableViewCell", for: indexPath) as? ReviewsTableViewCell else {
                 return UITableViewCell()
             }
+            
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ReviewsTableViewCell.imageTapped(gesture:)))
+
+            // add it to the image view;
+            cell.imageViewReviews.addGestureRecognizer(tapGesture)
+            // make sure imageView can be interacted with by user
+            cell.imageViewReviews.isUserInteractionEnabled = true
+
             cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         }
@@ -135,8 +165,31 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            guard let reportProductVC = self.storyboard?.instantiateViewController(withIdentifier: ReportViewController.iddentifer) as? ReportViewController else { return }
-            self.navigationController?.pushViewController(reportProductVC, animated: true)
+            if let presentedViewController = self.storyboard?.instantiateViewController(withIdentifier: ReportViewController.iddentifer) {
+                presentedViewController.providesPresentationContextTransitionStyle = true
+                presentedViewController.definesPresentationContext = true
+                presentedViewController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext;
+                presentedViewController.view.backgroundColor = UIColor.init(white: 0.2 , alpha: 0.8)
+                self.present(presentedViewController, animated: true, completion: nil)
+            }
+
+//            let presenter: Presentr = {
+//                let widthSreen = Float(UIScreen.main.bounds.size.width)
+//                let heigtScrren = Float(UIScreen.main.bounds.size.height)
+//                let customType = PresentationType.custom(width: ModalSize.custom(size: widthSreen),
+//                                                         height: ModalSize.custom(size: heigtScrren),
+//                                                         center: ModalCenterPosition.center)
+//
+//                let customPresenter = Presentr(presentationType: customType)
+//                customPresenter.roundCorners = true
+//                customPresenter.keyboardTranslationType = .none
+//                customPresenter.backgroundColor = .brown
+//                customPresenter.dismissOnSwipe = true
+//                return customPresenter
+//            }()
+//
+//            let controller = ReportViewController()
+//            customPresentViewController(presenter, viewController: controller, animated: true, completion: nil)
         }
         
         if indexPath.section == 2 {

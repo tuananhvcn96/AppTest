@@ -38,6 +38,10 @@
 		AAA5E2BA2178981D00E23B5B /* TakeHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5E2B82178981D00E23B5B /* TakeHomeTableViewCell.xib */; };
 		AAA5E2BD217898B800E23B5B /* TakeHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5E2BB217898B800E23B5B /* TakeHomeCollectionViewCell.swift */; };
 		AAA5E2BE217898B800E23B5B /* TakeHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5E2BC217898B800E23B5B /* TakeHomeCollectionViewCell.xib */; };
+		CC04237E21838579007C5DE9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC04237D21838579007C5DE9 /* Router.swift */; };
+		CC042380218385B3007C5DE9 /* ReportViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC04237F218385B3007C5DE9 /* ReportViewRouter.swift */; };
+		CC0423822183862E007C5DE9 /* UIViewControllerExtensition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0423812183862E007C5DE9 /* UIViewControllerExtensition.swift */; };
+		CC0423852184CDFF007C5DE9 /* FullScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0423842184CDFF007C5DE9 /* FullScreenVC.swift */; };
 		CC770A002177750F00B6D163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7709FF2177750F00B6D163 /* AppDelegate.swift */; };
 		CC770A052177751000B6D163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC770A032177751000B6D163 /* Main.storyboard */; };
 		CC770A072177751200B6D163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC770A062177751200B6D163 /* Assets.xcassets */; };
@@ -48,6 +52,7 @@
 		CC770A1C2177A98E00B6D163 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770A1A2177A98E00B6D163 /* HomeCollectionViewCell.swift */; };
 		CC770A1D2177A98E00B6D163 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC770A1B2177A98E00B6D163 /* HomeCollectionViewCell.xib */; };
 		CC770A212178FB1D00B6D163 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770A202178FB1D00B6D163 /* UserViewController.swift */; };
+		CCBC507B21860E3300684122 /* ProductReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC507A21860E3300684122 /* ProductReportViewController.swift */; };
 		CCE95FBC217A387100DA23A3 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE95FBB217A387100DA23A3 /* UserInfoViewController.swift */; };
 		CCE95FC0217A415F00DA23A3 /* UserTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE95FBE217A415F00DA23A3 /* UserTwoTableViewCell.swift */; };
 		CCE95FC1217A415F00DA23A3 /* UserTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE95FBF217A415F00DA23A3 /* UserTwoTableViewCell.xib */; };
@@ -100,6 +105,10 @@
 		AAA5E2B82178981D00E23B5B /* TakeHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakeHomeTableViewCell.xib; sourceTree = "<group>"; };
 		AAA5E2BB217898B800E23B5B /* TakeHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AAA5E2BC217898B800E23B5B /* TakeHomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakeHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		CC04237D21838579007C5DE9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CC04237F218385B3007C5DE9 /* ReportViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewRouter.swift; sourceTree = "<group>"; };
+		CC0423812183862E007C5DE9 /* UIViewControllerExtensition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensition.swift; sourceTree = "<group>"; };
+		CC0423842184CDFF007C5DE9 /* FullScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenVC.swift; sourceTree = "<group>"; };
 		CC7709FC2177750F00B6D163 /* AppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7709FF2177750F00B6D163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC770A042177751000B6D163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +121,7 @@
 		CC770A1A2177A98E00B6D163 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC770A1B2177A98E00B6D163 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		CC770A202178FB1D00B6D163 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		CCBC507A21860E3300684122 /* ProductReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReportViewController.swift; sourceTree = "<group>"; };
 		CCE95FBB217A387100DA23A3 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		CCE95FBE217A415F00DA23A3 /* UserTwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoTableViewCell.swift; sourceTree = "<group>"; };
 		CCE95FBF217A415F00DA23A3 /* UserTwoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTwoTableViewCell.xib; sourceTree = "<group>"; };
@@ -229,6 +239,17 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		CC04237C2183856D007C5DE9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CC04237D21838579007C5DE9 /* Router.swift */,
+				CC04237F218385B3007C5DE9 /* ReportViewRouter.swift */,
+				CC0423812183862E007C5DE9 /* UIViewControllerExtensition.swift */,
+				CC0423842184CDFF007C5DE9 /* FullScreenVC.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		CC7709F32177750F00B6D163 = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +271,8 @@
 		CC7709FE2177750F00B6D163 /* AppTest */ = {
 			isa = PBXGroup;
 			children = (
+				CCBC507921860E1400684122 /* ProductReport */,
+				CC04237C2183856D007C5DE9 /* Presenter */,
 				CCF90C5B217E562800217DD7 /* MapKit */,
 				CCFDA6AA217B152C00427C01 /* Report */,
 				CCFDA6A7217A684500427C01 /* Reviews */,
@@ -311,6 +334,14 @@
 				CCE95FBB217A387100DA23A3 /* UserInfoViewController.swift */,
 			);
 			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		CCBC507921860E1400684122 /* ProductReport */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC507A21860E3300684122 /* ProductReportViewController.swift */,
+			);
+			path = ProductReport;
 			sourceTree = "<group>";
 		};
 		CCE95FBD217A408000DA23A3 /* Cell */ = {
@@ -482,10 +513,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AppTest/Pods-AppTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +548,8 @@
 				CCFDA6A9217A685A00427C01 /* ReviewsViewController.swift in Sources */,
 				AA419006217871ED00D4CBE2 /* CosmosTouch.swift in Sources */,
 				CCFDA6AC217B15A700427C01 /* ReportViewController.swift in Sources */,
+				CC0423822183862E007C5DE9 /* UIViewControllerExtensition.swift in Sources */,
+				CCBC507B21860E3300684122 /* ProductReportViewController.swift in Sources */,
 				AA419002217871ED00D4CBE2 /* CosmosSize.swift in Sources */,
 				AA419000217871ED00D4CBE2 /* CosmosText.swift in Sources */,
 				CCE95FC4217A432F00DA23A3 /* ListingTableViewCell.swift in Sources */,
@@ -530,8 +565,10 @@
 				CC770A1321778FCD00B6D163 /* HomeViewController.swift in Sources */,
 				AA419007217871ED00D4CBE2 /* CosmosRating.swift in Sources */,
 				CC770A212178FB1D00B6D163 /* UserViewController.swift in Sources */,
+				CC042380218385B3007C5DE9 /* ReportViewRouter.swift in Sources */,
 				CCF90C62217E571800217DD7 /* Popup.swift in Sources */,
 				AA418FFF217871ED00D4CBE2 /* CosmosAccessibility.swift in Sources */,
+				CC04237E21838579007C5DE9 /* Router.swift in Sources */,
 				AA418FE42178703300D4CBE2 /* ReviewsTableViewCell.swift in Sources */,
 				CCE95FC8217A459B00DA23A3 /* ListingCollectionViewCell.swift in Sources */,
 				AA419004217871ED00D4CBE2 /* CosmosLocalizedRating.swift in Sources */,
@@ -539,6 +576,7 @@
 				AAA5E2B6217880A200E23B5B /* ProductViewController.swift in Sources */,
 				CCF90C63217E571800217DD7 /* Venue.swift in Sources */,
 				AA418FFD217871ED00D4CBE2 /* StarFillMode.swift in Sources */,
+				CC0423852184CDFF007C5DE9 /* FullScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,7 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VSF2C5TS9;
 				INFOPLIST_FILE = AppTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -706,7 +744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VSF2C5TS9;
 				INFOPLIST_FILE = AppTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

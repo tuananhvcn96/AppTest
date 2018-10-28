@@ -33,6 +33,16 @@ class UserInfoViewController: UIViewController {
         let nibUserInfo = UINib(nibName: "UserInfoTableViewCell", bundle: nil)
         self.tableView.register(nibUserInfo, forCellReuseIdentifier: "UserInfoTableViewCell")
     }
+    
+    @objc func imageTapped(gesture: UIGestureRecognizer) {
+        
+        // if the tapped view is a UIImageView then set it to imageview
+        if (gesture.view as? UIImageView) != nil {
+            guard let userVC = self.storyboard?.instantiateViewController(withIdentifier: UserViewController.iddentifer) as? UserViewController else { return }
+            self.navigationController?.pushViewController(userVC, animated: true)
+        }
+    }
+    
 }
 
 extension UserInfoViewController: UITableViewDelegate, UITableViewDataSource {
@@ -73,6 +83,13 @@ extension UserInfoViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell: UserTwoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "UserTwoTableViewCell", for: indexPath) as? UserTwoTableViewCell else {
                 return UITableViewCell()
             }
+            
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(UserTwoTableViewCell.imageTapped(gesture:)))
+            
+            // add it to the image view;
+            cell.imageViewUserTwo.addGestureRecognizer(tapGesture)
+            // make sure imageView can be interacted with by user
+            cell.imageViewUserTwo.isUserInteractionEnabled = true
             cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         } else if indexPath.section == 1 {

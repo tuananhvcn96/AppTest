@@ -11,6 +11,8 @@ import UIKit
 class TakeHomeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionViewTakeHome: UICollectionView!
+    var myVar: Int = 4
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,13 +39,20 @@ class TakeHomeTableViewCell: UITableViewCell {
     }
 }
 
-extension TakeHomeTableViewCell: UICollectionViewDataSource {
+extension TakeHomeTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return myVar
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TakeHomeCollectionViewCell", for: indexPath) as! TakeHomeCollectionViewCell
         return cell
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        //let cell = collectionView.cellForItem(at: indexPath)
+//        
+//        guard let fullScreenVC = self.storyboard?.instantiateViewController(withIdentifier: FullScreenVC.iddentifer) as? FullScreenVC else { return }
+//        
+//    }
 }

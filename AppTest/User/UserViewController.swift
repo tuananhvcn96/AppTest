@@ -18,6 +18,8 @@ class UserViewController: UIViewController,UIPopoverPresentationControllerDelega
     @IBOutlet weak var image2: UIButton!
     @IBOutlet weak var image3: UIButton!
     @IBOutlet weak var image4: UIButton!
+    static let iddentifer = "UserViewController"
+
     
     var venues = [Venue]()
     var anotionTitle: String? = ""

@@ -1,16 +1,20 @@
 PODS:
+  - Presentr (1.3.2)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
+  - Presentr
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Presentr
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Presentr: 797ae6ec8904eaba4ec58a4c2065bd66e31569ea
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 30a756bcd68b23919c1c36c494a239904fbd4e77
+PODFILE CHECKSUM: 3b6ae0fb68310ab79ac217c16465d5e7dd7f49cb
 
 COCOAPODS: 1.5.3
